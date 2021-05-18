@@ -22,6 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/student',\App\Http\Livewire\Crud::class )->name('student');
+Route::middleware(['auth:sanctum', 'verified'])->get('/fourn',\App\Http\Livewire\CrudFourn::class )->name('fourn');
 
 //Route::get('students', function () {
   //  return view('welcome');

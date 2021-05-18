@@ -22,6 +22,11 @@
                         {{ __('client') }}
                     </x-jet-nav-link>
                 </div>
+                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('fourn') }}" :active="request()->routeIs('fourn')">
+                        {{ __('fournisseur') }}
+                    </x-jet-nav-link>
+                </div>
                 
 
                
