@@ -16,7 +16,22 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('student') }}" :active="request()->routeIs('student')">
+                        {{ __('client') }}
+                    </x-jet-nav-link>
+                </div>
+                
+
+               
+
+
+
+
             </div>
+
+            
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <!-- Teams Dropdown -->
