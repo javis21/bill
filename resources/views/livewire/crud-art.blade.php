@@ -27,8 +27,8 @@
                         <th class="px-4 py-2">name</th>
                         <th class="px-4 py-2">famille</th>
                         <th class="px-4 py-2">description</th>
-                        <th class="px-4 py-2">prix de vente</th>
-                        <th class="px-4 py-2">prix d achat</th>
+                        <th class="px-4 py-2">prix_vente</th>
+                        <th class="px-4 py-2">prix_achat</th>
                         <th class="px-4 py-2">Quantite</th>
 
                     </tr>
