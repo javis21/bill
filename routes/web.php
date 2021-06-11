@@ -27,6 +27,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/facture',\App\Http\Livewi
 Route::middleware(['auth:sanctum', 'verified'])->get('/article',\App\Http\Livewire\CrudArt::class )->name('article');
 Route::middleware(['auth:sanctum', 'verified'])->get('/student',\App\Http\Livewire\Crud::class )->name('student');
 Route::middleware(['auth:sanctum', 'verified'])->get('/fourn',\App\Http\Livewire\CrudFourn::class )->name('fourn');
+Route::resource('orders', App\Http\Controllers\OrderController::class);
+
 
 //Route::get('students', function () {
   //  return view('welcome');

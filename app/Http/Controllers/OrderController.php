@@ -1,26 +1,20 @@
 <?php
 
-namespace App\Http\Livewire;
-use App\Models\article;
+namespace App\Http\Controllers;
+
 use App\Models\Order;
 use App\Models\Product;
-use Livewire\Component;
 use Illuminate\Http\Request;
 
-
-class Facture extends Component
+class OrderController extends Controller
 {
-    public function render()
+    public function create()
     {
-
-        $articles = article::all();
-        return view('livewire.facture',compact('articles'));
+    	return view('orders.create');
     }
 
     public function store(Request $request)
     {
-
-        
         $order = Order::create([
             'customer_name' => $request->customer_name,
             'customer_email' => $request->customer_email,
@@ -31,7 +25,6 @@ class Facture extends Component
                 ['quantity' => $product['quantity']]);
         }
 
-        
+        return 'la facture a été crée';
     }
-
 }
